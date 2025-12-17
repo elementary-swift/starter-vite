@@ -6,16 +6,7 @@
 
 A starter template for building web applications with [Elementary UI](https://github.com/elementary-swift/elementary-ui).
 
-## Use This Template
-
-Create a new project from this template using the GitHub CLI:
-
-```sh
-gh repo create my-elementary-app --template elementary-swift/starter-vite --clone
-cd my-elementary-app
-```
-
-Or click the **"Use this template"** button at the top of this repository on GitHub.
+Click **Use this template** on GitHub or check the [docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) about using templates.
 
 ## Prerequisites
 
