@@ -17,6 +17,15 @@ Click **Use this template** on GitHub or check the [docs](https://docs.github.co
 ## Getting Started
 
 ```sh
+# Verify Swift toolchain
+swift --version
+# look for a compiler tag like this: (swift-6.2.3-RELEASE)
+
+# Verify Swift SDK for WebAssembly
+swift sdk list
+# should contain matching entries, eg: swift-6.2.3-RELEASE_wasm and swift-6.2.3-RELEASE_wasm-embedded
+
+# Install dependencies
 pnpm install
 ```
 
