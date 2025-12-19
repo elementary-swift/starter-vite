@@ -4,7 +4,7 @@
 
 # Minimal Vite Starter for ElementaryUI
 
-A starter template for building web applications with [Elementary UI](https://github.com/elementary-swift/elementary-ui) powered by [Vite](https://vite.dev/).
+A starter template for building web applications with [ElementaryUI](https://github.com/elementary-swift/elementary-ui) powered by [Vite](https://vite.dev/).
 
 Click **Use this template** on GitHub or check the [docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) about using templates.
 
