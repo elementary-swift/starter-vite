@@ -15,7 +15,7 @@ Click **Use this template** on GitHub or check the [docs](https://docs.github.co
 ## Prerequisites
 
 - Swift 6.2+ with matching Swift SDK for WebAssembly ([swift.org](https://www.swift.org/documentation/articles/wasm-getting-started.html))
-- Node.js 22+ with pnpm ([nodejs.org](https://nodejs.org/en/download), [pnpm.io](https://pnpm.io/installation))
+- Node.js 22+ ([nodejs.org](https://nodejs.org/en/download))
 - wasm-opt (optional, [homebrew](https://formulae.brew.sh/formula/binaryen) or [manual](https://github.com/WebAssembly/binaryen/releases))
 
 ## Getting Started
@@ -30,14 +30,14 @@ swift sdk list
 # should contain matching entries, eg: swift-6.2.3-RELEASE_wasm and swift-6.2.3-RELEASE_wasm-embedded
 
 # Install dependencies
-pnpm install
+npm install
 ```
 
 ## Develop
 
 ```sh
 # Start development server with hot reload
-pnpm dev
+npm run dev
 ```
 
 Runs an initial debug build of the WebAssembly app in the browser. Swift files are watched and trigger an instant rebuild/reload on save.
@@ -46,11 +46,31 @@ Runs an initial debug build of the WebAssembly app in the browser. Swift files a
 
 ```sh
 # Build in release and bundle for deployment
-pnpm build
+npm run build
 
 # Preview the built web app locally
-pnpm preview
+npm run preview
 ```
+
+## Configuration
+
+The template comes with a [Vite config](vite.config.ts) that uses *Embedded Swift* for release builds.
+
+```ts
+// vite.config.ts
+import { defineConfig } from "vite";
+import swiftWasm from "@elementary-swift/vite-plugin-swift-wasm";
+
+export default defineConfig({
+  plugins: [
+    swiftWasm({
+      useEmbeddedSDK: true,
+    }),
+  ],
+});
+```
+
+For all configuration options, visit the plugin's homepage: [vite-plugin-swift-wasm](https://github.com/elementary-swift/vite-plugin-swift-wasm).
 
 ## License
 
