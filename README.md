@@ -1,5 +1,7 @@
 <p align="center">
-  <img src="https://elementary-swift.github.io/assets/elementary-logo.svg" width="125px" alt="Elementary Logo">
+  <a href="https://elementary.codes">
+    <img src="https://elementary-swift.github.io/assets/elementary-logo.svg" width="125px" alt="Elementary Logo">
+  </a>
 </p>
 
 # Minimal Vite Starter for ElementaryUI
