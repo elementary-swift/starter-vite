@@ -1,0 +1,8 @@
+{
+  "name": "swift:wasm-elementary-ui",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "postCreateCommand": "npm install"
+}

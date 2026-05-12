@@ -1,11 +1,11 @@
-// swift-tools-version:6.2
+// swift-tools-version:6.3
 import PackageDescription
 
 let package = Package(
   name: "elementary-web-app",
   platforms: [.macOS(.v26)],
   dependencies: [
-    .package(url: "https://github.com/elementary-swift/elementary-ui.git", from: "0.1.3")
+    .package(url: "https://github.com/elementary-swift/elementary-ui.git", from: "0.2.2")
   ],
   targets: [
     .executableTarget(
