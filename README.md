@@ -52,11 +52,11 @@ Open the project folder in your editor and run the "Dev Containers: Reopen in Co
 ```sh
 # Verify Swift toolchain
 swift --version
-# look for a compiler tag like this: (swift-6.4.1-RELEASE)
+# look for a compiler tag like this: (swift-6.4.2-RELEASE)
 
 # Verify Swift SDK for WebAssembly
 swift sdk list
-# should contain matching entries, eg: swift-6.4.1-RELEASE_wasm and swift-6.4.1-RELEASE_wasm-embedded
+# should contain matching entries, eg: swift-6.4.2-RELEASE_wasm and swift-6.4.2-RELEASE_wasm-embedded
 ```
 
 ## Develop
