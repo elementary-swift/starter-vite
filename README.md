@@ -31,7 +31,7 @@ git clone https://github.com/elementary-swift/starter-vite.git my-swift-web-app
 ### Option 1: Native Install
 
 **Prerequisites:**
-- Swift 6.3+ with matching Swift SDK for WebAssembly ([swift.org](https://www.swift.org/documentation/articles/wasm-getting-started.html))
+- Swift 6.4+ with matching Swift SDK for WebAssembly ([swift.org](https://www.swift.org/documentation/articles/wasm-getting-started.html))
 - Node.js 22+ ([nodejs.org](https://nodejs.org/en/download))
 - wasm-opt (optional, [homebrew](https://formulae.brew.sh/formula/binaryen) or [manual](https://github.com/WebAssembly/binaryen/releases))
 
@@ -52,11 +52,11 @@ Open the project folder in your editor and run the "Dev Containers: Reopen in Co
 ```sh
 # Verify Swift toolchain
 swift --version
-# look for a compiler tag like this: (swift-6.3.1-RELEASE)
+# look for a compiler tag like this: (swift-6.4.1-RELEASE)
 
 # Verify Swift SDK for WebAssembly
 swift sdk list
-# should contain matching entries, eg: swift-6.3.1-RELEASE_wasm and swift-6.3.1-RELEASE_wasm-embedded
+# should contain matching entries, eg: swift-6.4.1-RELEASE_wasm and swift-6.4.1-RELEASE_wasm-embedded
 ```
 
 ## Develop
